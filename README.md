@@ -26,7 +26,7 @@ Plot the images of the original one and the filtered one using plt.figure() and 
 
 ## Program:
 ~~~
-Developed By   : H.Gunaseelan
+Developed By   : Gunaseelan G
 Register Number: 212221230031
 ~~~
 ~~~
