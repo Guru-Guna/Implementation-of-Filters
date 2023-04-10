@@ -25,20 +25,20 @@ Plot the images of the original one and the filtered one using plt.figure() and 
  
 
 ## Program:
-```python
+~~~
 Developed By   : Gunaseelan G
 Register Number: 212221230031
-
-```python
+~~~
+~~~
 import cv2
 import numpy as np
 import matplotlib.pyplot as plt
-image=cv2.imread('bike.jpg')
+image=cv2.imread('bike.png')
 image2=cv2.cvtColor (image1, cv2.COLOR_BGR2RGB)
-
+~~~
 ## 1. Smoothing Filters :
 ### i) Using Averaging Filter:
-```python
+~~~
 kernel1 = np.ones((11,11),np.float32)/121
 avg_filter = cv2.filter2D(image2,-1,kernel1)
 plt.figure(figsize = (9,9))
@@ -50,9 +50,9 @@ plt.subplot(1,2,2)
 plt.imshow(avg_filter)
 plt.title("Filtered")
 plt.axis("off")
-
+~~~
 ### ii) Using Weighted Averaging Filter:
-```python
+~~~
 kernel2 = np.array([[1,2,1],[2,4,2],[1,2,1]])/16
 weighted_filter = cv2.filter2D(image2,-1,kernel2)
 plt.figure(figsize = (9,9))
@@ -64,9 +64,9 @@ plt.subplot(1,2,2)
 plt.imshow(weighted_filter)
 plt.title("Filtered")
 plt.axis("off")
-
+~~~
 ### iii) Using Gaussian Filter:
-```python
+~~~
 gaussian_blur = cv2.GaussianBlur(src = image2, ksize = (11,11), sigmaX=0, sigmaY=0)
 plt.figure(figsize = (9,9))
 plt.subplot(1,2,1)
@@ -125,35 +125,35 @@ plt.axis("off")
 ### Smoothing Filters:
 #### i)  Using Averaging Filter:
 
-![img1](https://user-images.githubusercontent.com/93427255/230879439-1db798f6-2f32-40ef-89ee-3018b74e2f13.png)
+![img1](https://user-images.githubusercontent.com/93427255/230881888-0dceda36-0c32-4dbc-9ed6-5c9b22207145.png)
 
 
 #### ii) Using Weighted Average Filter:
 
-![img2](https://user-images.githubusercontent.com/93427255/230879497-f3f330ff-c9fa-4e7a-934b-f1f6c654d14c.png)
+![img2](https://user-images.githubusercontent.com/93427255/230881923-39b4bc71-e791-406c-aa2f-2fd86b8123f6.png)
 
 
 #### iii) Using Gaussian Filter:
 
-![img3](https://user-images.githubusercontent.com/93427255/230879566-37e1a82e-691d-4f8b-8264-622a66adffc5.png)
+![img3](https://user-images.githubusercontent.com/93427255/230881949-be6caef2-d3a2-4a1e-aeb8-8556e10e4bc1.png)
 
 
 #### iv) Using Median Filter:
 
-![img4](https://user-images.githubusercontent.com/93427255/230880777-e201a9f1-2a6a-49a8-a817-2decb8ed25ac.png)
+![img4](https://user-images.githubusercontent.com/93427255/230881975-19385751-21cd-43b7-b4c7-198167af4292.png)
 
 
 ### Sharpening Filters:
+
 #### i) Using Laplacian Kernel:
 
-![img5](https://user-images.githubusercontent.com/93427255/230879663-4d31ddef-1129-410c-a858-0dc4436d0dca.png)
+![img5](https://user-images.githubusercontent.com/93427255/230881995-02020534-78aa-474d-b4e4-ea3114e1557f.png)
 
 
 #### ii) Using Laplacian Operator:
 
 
-![image](https://user-images.githubusercontent.com/93427255/230880900-ef2ddc76-98ad-4bd3-9b3f-75848b52798a.png)
-
+![img6](https://user-images.githubusercontent.com/93427255/230882109-157698ea-bfdd-46be-ae78-841a0fe862c1.png)
 
 
 ## Result:
