@@ -25,10 +25,10 @@ Plot the images of the original one and the filtered one using plt.figure() and 
  
 
 ## Program:
-~~~
+```python
 Developed By   : Gunaseelan G
 Register Number: 212221230031
-~~~
+
 ~~~
 import cv2
 import numpy as np
