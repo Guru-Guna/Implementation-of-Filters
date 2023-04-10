@@ -29,16 +29,16 @@ Plot the images of the original one and the filtered one using plt.figure() and 
 Developed By   : Gunaseelan G
 Register Number: 212221230031
 
-~~~
+```python
 import cv2
 import numpy as np
 import matplotlib.pyplot as plt
 image=cv2.imread('bike.jpg')
 image2=cv2.cvtColor (image1, cv2.COLOR_BGR2RGB)
-~~~
+
 ## 1. Smoothing Filters :
 ### i) Using Averaging Filter:
-~~~
+```python
 kernel1 = np.ones((11,11),np.float32)/121
 avg_filter = cv2.filter2D(image2,-1,kernel1)
 plt.figure(figsize = (9,9))
@@ -50,9 +50,9 @@ plt.subplot(1,2,2)
 plt.imshow(avg_filter)
 plt.title("Filtered")
 plt.axis("off")
-~~~
+
 ### ii) Using Weighted Averaging Filter:
-~~~
+```python
 kernel2 = np.array([[1,2,1],[2,4,2],[1,2,1]])/16
 weighted_filter = cv2.filter2D(image2,-1,kernel2)
 plt.figure(figsize = (9,9))
@@ -64,9 +64,9 @@ plt.subplot(1,2,2)
 plt.imshow(weighted_filter)
 plt.title("Filtered")
 plt.axis("off")
-~~~
+
 ### iii) Using Gaussian Filter:
-~~~
+```python
 gaussian_blur = cv2.GaussianBlur(src = image2, ksize = (11,11), sigmaX=0, sigmaY=0)
 plt.figure(figsize = (9,9))
 plt.subplot(1,2,1)
