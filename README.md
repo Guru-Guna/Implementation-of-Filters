@@ -140,8 +140,7 @@ plt.axis("off")
 
 #### iv) Using Median Filter:
 
-
-
+![img4](https://user-images.githubusercontent.com/93427255/230880777-e201a9f1-2a6a-49a8-a817-2decb8ed25ac.png)
 
 
 ### Sharpening Filters:
@@ -153,6 +152,7 @@ plt.axis("off")
 #### ii) Using Laplacian Operator:
 
 
+![image](https://user-images.githubusercontent.com/93427255/230880900-ef2ddc76-98ad-4bd3-9b3f-75848b52798a.png)
 
 
 
